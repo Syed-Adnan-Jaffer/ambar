@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    font-family: arial;
+
+}
+
+body{
+    flex-wrap: wrap;
+    width: 100%;
+}
+.container{
+    height: 70px;
+    display: flex;
+    background-color: #0f1111;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.logo{
+    height: 5vw;
+    width: 8vw;
+    background-image: url(amazon_logo.png);
+    background-size: cover;
+    display: flex;
+    justify-content: start;
+}
+
+.address{
+    color: #cccccc;
+    align-content: center;
+}
+.Deliver{
+    font-size: 0.80rem;
+    margin-left: 15px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    width: 15px;
+}
+.contry{
+    margin-left: 3px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+}
+
+.search-box{
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+    width: 600px;
+    text-align: center;
+    font-size: 0.85rem;
+}
+.select-box{
+    height: 40px;
+    width:50px;
+    background-color: hsla(0, 0%, 100%, 0.852);
+    color: #0f1111;
+    border-top-left-radius:5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    text-align: center;
+}
+.search-input{
+    width:100%;
+    border: none;
+    font-size: 1rem;
+}
+
+.search-icon{
+    background-color: #febd68;
+    width: 50px;
+    align-content: center;
+    border-top-right-radius:5px;
+    border-bottom-right-radius: 5px;
+    font-size: 1rem;
+}
+
+.sign-in{
+    color: #cccccc;
+    font-size: 0.85rem;
+}
+.hello {
+    font-size: 0.9vw;
+}
+
+
+.account{
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+}
+
+.order-box{
+    color: #cccccc;
+    font-weight: 0.85rem;
+}
+.return{
+    font-size: 0.85rem;
+}
+.order{
+    color: white;
+    font-weight: 700;
+}
+.cart{
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+}
+.cart-logo{
+    color: white;
+    font-size:2vw;
+    align-items: center;
+}
+.cart-text{
+    margin-left:2px ;
+    color:white;
+    align-content: center;
+    font-size: 1rem;
+    font-weight: 700;
+    height: 30px;
+}
+.menu{
+    font-size: 1.2vw;
+    font-weight: 800;
+    color: white;
+    display: none;
+}
+
+/* media queares */
+@media (min-width:1024px)  and (max-width:1440px){
+    .container{
+        justify-content: space-evenly
+    }
+    .container .logo{
+        margin: 0px 2px 0px 3px;
+        padding: 0px 6px 0px 2px;
+    }
+    .container .address .Deliver{
+        padding-right: 5px;
+    }
+    .container .address .Deliver i{
+        font-size: 1vw;
+    }
+    .container .search-box i{
+        align-content: center;
+    }
+    .container .sign-in{
+        padding-left: 1vw ;
+    }
+    .container .sign-in .account{
+        font-size: 1.2vw;
+        padding-right: 5px;
+    }
+    .container .order-box .return{
+        font-size: 1vw;
+    }
+    .container .order-box .order{
+        font-size: 1.2vw;
+        padding-right: 5px;
+    }
+
+    .container .cart i{
+        font-size: 1.5vw;
+    }
+    .container .cart .cart-text{
+        font-size: 1.2vw;
+        padding-right: 1px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .container .logo{
+        width: 5vw;
+        display: flex;
+        justify-content: center;
+        padding-right: 33px;
+    }
+ /* address box */
+    .container .address{
+        width: 3rem;
+    }
+    .container .address .Deliver{
+        font-size: 1.4vw;
+    }
+    .container .address .icon p{
+        width: 1px;
+        font-size:1.7vw;
+    }
+    .container .address .icon i{
+        font-size: 1.6vw;
+    }
+
+    .container .search-box{
+        padding-left: 2vw;
+    }
+
+    /* search box */
+    .container .search-box{
+        height: 5vw;
+        width: 1vm;
+    }
+    .container .select-box{
+        height: 5vw;
+    }
+    .container .search-icon{
+        height: 5vw;
+    }
+
+    /* 4th box */
+    .container .sign-in {
+        width: 2vm;
+
+    }
+    .container .hello{
+        font-size: 1.2vw;
+    }
+    .container .sign-in i{
+        display: none;
+    }
+    .container .account{
+        font-size: 1.5vw;
+    }
+
+    /* 5th box */
+    .container .order-box .return{
+        font-size: 1.2vw;
+    }
+    .container .order-box .order{
+        font-size: 1.5vw;
+    }
+
+    /* cart */
+    .container .cart.cart-logo{
+        font-size: 10px;
+        padding-left: 2vw;
+        padding-right: 3vw;
+    }
+    .container .cart .cart-text{
+        display: none;
+    }
+}
+
+/* media for mobile L */
+@media (max-width:426px) {
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        height: 11vw;
+    }
+    .container .logo{
+        width: 50px;
+        height: 25px;
+        padding-left: 20px;
+    }
+    .container .address{
+        display: none;
+    }
+    .container .address.icon{
+        display: none;
+    }
+    .container .contry{
+        display: none;
+    }
+
+    .container .search-box{
+        height: 20px;
+        justify-content: start;
+        width: 50vw;
+    }
+    .container .search-box .select-box{
+        height: 20px;
+        width: 40px;
+        font-size: 2vw;
+    }
+    .container .search-box .search-input{
+        font-size: 2vw;
+        border-radius: 0;
+    }
+    
+    .container .search-box .search-icon{
+        height: 20px;
+        width: 35px;
+        font-size: 2.5vw;
+        align-items: center;
+    }
+    .container .sign-in p{
+        font-size: 1.9vw;
+    }
+
+    .container .order-box .return{
+        font-size: 1.9vw;
+    }
+    .container .order-box .order{
+        font-size: 2vw;
+    }
+    .container .sign-in .account{
+        font-size: 1.9vw;
+    }
+    .container .cart i{
+        font-size: 2vw;
+        padding-right: 5px;
+    }
+    
+    @media (min-width:427px) and (max-width:767px) {
+        .container .address .Deliver{
+            padding-right: 2px;
+        }
+        .container .search-box .select-box{
+            width: 2vw;
+            font-size: 1vw;
+        }
+
+        .container .search-box .search-input{
+            font-size: 2vw;
+        }
+        .container .search-box i{
+            width: 2vw;
+            align-items: center;
+
+        }
+    }
+}
