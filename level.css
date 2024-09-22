@@ -339,7 +339,7 @@ body{
         font-size: 1vw;
         width: 0.5vw;
     }
-    .container .search-box .search-icon{
-        align-items: center;
+    .container .search-box i{
+        align-content: center;
     }
 }
