@@ -331,3 +331,15 @@ body{
         }
     }
 }
+@media (min-widh:250px) and (max-width:400px) {
+    .container .search-box{
+        height: 0.5vw;
+    }
+    .container .search-box .select-box{
+        font-size: 1vw;
+        width: 0.5vw;
+    }
+    .container .search-box .search-icon{
+        align-items: center;
+    }
+}
