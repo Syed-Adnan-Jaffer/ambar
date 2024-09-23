@@ -333,11 +333,11 @@ body{
 }
 @media  (max-width:320px) {
     .container .search-box{
-        height: 0.5vw;
+        height: 20px;
     }
     .container .search-box .select-box{
         font-size: 1vw;
-        width: 0.5vw;
+        width: 1vw;
     }
     .container .search-box i{
         width: 1vw;
